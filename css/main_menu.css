@@ -1,0 +1,540 @@
+
+body {
+    padding: 0px;
+    margin: 0px; 
+    
+    
+}
+
+
+@font-face {
+    font-family: 'magicschool';
+    src: url('../fonts/MagicSchoolOne.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+} 
+
+
+
+@font-face {
+    font-family: 'Fontin-Regular';
+    src: url('../fonts/Fontin-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+} 
+
+
+#jatekneve {
+    color: white;
+    font-family: 'magicschool';
+    font-size: 60px;
+    text-align: left;
+    float: left;
+    
+    padding: 10px;
+    
+    
+}
+
+#jatekneve span {
+    color: white;
+    font-family: 'magicschool';
+    font-size: 20px;
+    
+}
+
+
+
+
+#chargen {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;  
+    
+    background-image: url('../assets/artworks/castle15b.jpg');
+}
+
+#chargen_menu {
+    margin-right: 20px;
+    margin-top: 40px;
+    right: 0px;
+    position: absolute;
+}
+
+#fblike {
+    position: absolute;
+    top: 660px;
+    right: 10px;
+}
+
+.chargen_menupont {
+    
+    background-image: url('../assets/images/box.png');
+    background-repeat: no-repeat;
+    width: 290px;
+    height: 40px;
+    color: black;
+    font-family: 'Fontin-Regular';
+    font-size: 20px;
+    text-align: center;
+    padding-top: 8px;
+    cursor: pointer;
+}
+
+.hand_fire {
+    background-image: url('../assets/images/hand.png');
+    background-repeat: no-repeat;
+    width: 180px;
+    height: 48px;
+    position: absolute;
+    z-index: 2;
+    display: none;
+}
+
+.hand_fire_kicsi1 {
+    width: 180px;
+    height: 16px;
+    position: absolute;
+    z-index: 2;
+    display: none;
+    padding-top: 2px;
+}
+
+.hand_fire_kicsi2 {
+    width: 180px;
+    height: 16px;
+    position: absolute;
+    z-index: 2;
+    display: none;
+    padding-top: 2px;
+}
+
+#belepes {
+    display: none;
+    background-color: gray;
+    margin-bottom: 10px;
+    background-image: url('../assets/images/background2.png');
+    background-repeat: no-repeat;
+    width: 290px;
+    height: 168px;
+    
+    color: white;
+    font-family: 'Fontin-Regular';
+    font-size: 16px;
+}
+
+#belepes_belso {
+    width: 250px;
+    height: 148px;
+    margin-left: 20px;
+    padding-top: 15px;
+}
+
+.belepes_form_szoveg {
+    float: left;
+    width: 85px;
+    padding-top: 2px;
+    text-align: right;
+    margin-right: 4px;
+    
+}
+
+.belepes_form_input {
+    float: left;
+}
+
+.belepes_form_input input {
+    width: 150px;
+    border: 1px solid white;
+}
+
+#uj_jatek {
+    background-image: url('../assets/images/papir.png');
+    background-repeat: no-repeat;
+    width: 640px;
+    height: 480px;
+    margin-top: 90px;
+    padding: 37px;
+    display: none;
+}
+
+#screenshots {
+    background-image: url('../assets/images/papir.png');
+    background-repeat: no-repeat;
+    width: 640px;
+    height: 480px;
+    margin-top: 90px;
+    padding: 37px;
+    
+}
+
+.screenshots_egy {
+    float: left;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    padding: 0px;
+    height: 185px;
+    width: 270px;
+    
+    font-family: 'Fontin-Regular';
+    font-size: 16px;
+    
+}
+
+.screenshots_egy span {
+    color: black;
+    font-weight: bold;
+    font-family: 'Fontin-Regular';
+    font-size: 23px;
+}
+
+
+#regisztracio {
+    background-image: url('../assets/images/papir.png');
+    background-repeat: no-repeat;
+    width: 640px;
+    height: 480px;
+    margin-top: 90px;
+    padding: 37px;
+    display: none;
+}
+
+#betoltes {
+    background-image: url('../assets/images/papir.png');
+    background-repeat: no-repeat;
+    width: 640px;
+    height: 480px;
+    margin-top: 90px;
+    padding: 37px;
+    display: none;
+}
+
+.mentes_egysor {
+    cursor: pointer;
+}
+
+#felhasznalo_adatok {
+    background-image: url('../assets/images/papir.png');
+    background-repeat: no-repeat;
+    width: 640px;
+    height: 480px;
+    margin-top: 90px;
+    padding: 37px;
+    display: none;
+}
+
+
+
+#credits {
+    background-image: url('../assets/images/papir.png');
+    background-repeat: no-repeat;
+    width: 640px;
+    height: 480px;
+    margin-top: 90px;
+    padding: 37px;
+    display: none;
+}
+
+#credits_scroll {
+    width: 540px;
+    height: 400px;
+    overflow: hidden;
+    
+}
+
+.credits_sor {
+    color: black;
+    font-family: 'Fontin-Regular';
+    font-size: 18px;
+    text-align: center;
+}
+
+.credits_sor span {
+    color: black;
+    font-weight: bold;
+    font-family: 'Fontin-Regular';
+    font-size: 23px;
+}
+
+#portre_valaszto_bal {
+    float: left;
+    margin-top: 20px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+#portre_valaszto {
+    margin-top: 5px;
+    float: left;
+    width: 240px;
+    height: 60px;
+    overflow: hidden;
+    
+}
+#portre_valaszto_jobb {
+    float: left;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+
+li.portre_valaszto_egy {
+    float: left;
+    margin-right: 10px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    
+}
+
+#portre_valaszto_sajat {
+    clear: both;
+}
+
+.portre_valaszto_egy_aktiv {
+    background-color: #ffffff;
+    border: 1px solid red !important;
+}
+
+.csoport_szoveg {
+    color: black;
+    font-family: 'Fontin-Regular';
+    font-size: 18px;
+    font-weight: bold;
+}
+.csoport_szoveg span {
+    font-size: 15px;
+    font-weight: normal;
+}
+
+#uj_jatek_bal_felo {
+    float: left;
+    width: 300px;
+    height: 220px;
+}
+
+#uj_jatek_jobb_felo {
+    float: left;
+    display: none;
+}
+
+#uj_jatek_bal_also {
+    float: left;
+     width: 300px;
+     height: 220px;
+     display: none;
+}
+
+#uj_jatek_jobb_also {
+    float: left;
+    display: none;
+}
+
+br.clear {
+    clear: both;
+}
+
+.lista {
+    
+}
+
+.lista_elem {
+    cursor: pointer;
+    color: black;
+    font-family: 'Fontin-Regular';
+    font-size: 16px;
+    float: left;
+}
+
+.lista_elem2 {
+    cursor: pointer;
+    color: black;
+    font-family: 'Fontin-Regular';
+    font-size: 16px;
+    float: left;
+}
+
+.elem_disabled {
+    color: gray !important;
+}
+
+#uj_jatek_generalo_resz {
+    height: 480px;
+}
+
+#mentett_karakterek {
+    
+}
+
+#portre_kontener {
+    display: none;
+}
+
+.portre {
+    width:225px;
+    height: 86px;
+    float: left;
+    background-image: url('../assets/images/portrait_hatter2.png');
+    margin-bottom: 20px;
+}
+
+.portre_kep {
+    float: left;
+    width: 80px;
+    height: 86px; 
+}
+
+.portre_kep_kep {
+    width: 74px;
+    height: 65px;
+    margin-left: 6px;
+    
+    text-align: center;
+    padding-top: 20px;
+    
+}
+
+.portre_kep_szint {
+    
+    margin-top: -10px;
+    height: 20px;
+    width: 20px;
+    margin-left: 32px;
+    color: white;
+    font-family: 'Fontin-Regular';
+    font-size: 14px;
+    text-align: center;
+}
+
+.portre_nev {
+    float: left;
+    padding-left: 10px;
+    margin-left: -65px;
+    height: 15px;
+    margin-top: -6px;
+    text-align: left;
+    width: 120px;
+    font-family: 'Fontin-Regular';
+    font-size: 12px;
+    color: white;
+    
+}
+
+.hp_es_mana {
+    float: left;
+    width: 120px;
+    height: 35px;
+    
+}
+
+.hp_bar {
+    
+    margin-top: 5px;
+    margin-left: 3px;
+    width:119px;
+    height: 9px;
+    
+    overflow: hidden;
+    background-image: url('../assets/images/hp_bar.png');
+}
+
+.mana_bar {
+    
+    margin-top: 6px;
+    margin-left: 3px;
+    width: 119px;
+    height: 9px;
+    
+    overflow: hidden;
+    background-image: url('../assets/images/mana_bar.png');
+}
+
+.kezek_hatter {
+    
+    float: left;
+    width:77px;
+    height: 44px;
+    margin-top: 0px;
+    margin-left: 5px;
+    background-image: url('../assets/images/kezek_hatter.png');
+    color: white;
+    
+}
+
+.kez1 {
+    float: left;
+    position: relative;
+    width:32px;
+    height: 32px;
+    
+    margin-top: 7px;
+    margin-left: 3px;
+    
+}
+
+#alap_popup {
+    width: 155px;
+    height: 141px;
+    background-image: url('../assets/images/panel.png');
+    color: white;
+    position:absolute;
+    z-index: 30;
+    display: none;
+    margin-left: 340px;
+}
+
+#alap_popup_szoveg {
+    padding: 10px;
+    padding-top: 35px;
+    font-family: 'Fontin-Regular';
+    font-size: 14px;
+    text-align: center;
+    
+}
+
+.stat_egy {
+    float: left;
+}
+.stat_egy_neve {
+    float: left;
+    margin-right: 5px;
+    font-family: 'Fontin-Regular';
+    font-size: 14px;
+    width: 60px;
+}
+
+.stat_egy_nyil_balra {
+    float: left;
+    cursor: pointer;
+    width: 15px;
+    height: 25px;
+}
+
+.stat_egy_ertek {
+    float: left;
+}
+
+.stat_egy_nyil_jobbra {
+    float: left;
+    cursor: pointer;
+    width: 15px;
+    height: 25px;
+    margin-left: 6px;
+}
+
+.stat_egy_leiras {
+    float: left;
+    margin-left: 15px;
+}
+
+.panel_cim {
+    font-family: 'Fontin-Regular';
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 10px;
+}

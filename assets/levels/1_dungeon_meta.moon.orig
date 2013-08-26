@@ -1,0 +1,19 @@
+{
+"TERKEP_NEVE":"The Dark Cyst of Terror",
+"FAL_OSZLOPOK":1,
+
+"ALAP_FAL_TEXTURA":"wall_stone01_c.png",
+"ALAP_FAL_TEXTURA_NORMAL":"",
+"ALAP_FAL_TEXTURA_SPECULAR":"",
+
+"ALAP_PLAFON_TEXTURA":"wall_stone01_c.png",
+"ALAP_PLAFON_TEXTURA_NORMAL":"",
+"ALAP_PLAFON_TEXTURA_SPECULAR":"",
+
+"ALAP_PADLO_TEXTURA":"pattern_113/diffuse.png",
+"ALAP_PADLO_TEXTURA_NORMAL":"pattern_113/normal.png",
+"ALAP_PADLO_TEXTURA_SPECULAR":"pattern_113/specular.png",
+
+"FAL_TIPUS_1":"wall_stone01_c.png",
+"FAL_TIPUS_2":"wall_stone04_c2.png"
+}

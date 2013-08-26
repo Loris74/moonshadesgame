@@ -1,0 +1,1571 @@
+
+body {
+    background-color: black;   
+    padding: 0px;
+    margin: 0px; 
+    overflow: hidden;
+}
+
+@font-face {
+    font-family: 'magicschool';
+    src: url('../fonts/MagicSchoolOne.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+} 
+
+
+
+@font-face {
+    font-family: 'Fontin-Regular';
+    src: url('../fonts/Fontin-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+} 
+
+@font-face {
+    font-family: 'Arial';
+    asrc: url('../fonts/Fontin-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+} 
+
+
+#site {
+    width: 100%;
+    height: 100%;
+    
+    z-index: 5;
+    
+    position: absolute;
+    top: 0px;
+    left: 0px;  
+    
+}
+
+#site_baloldal {
+    float: left;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+#site_szinpad {
+    z-index: 4;
+}
+
+#site_also {
+    position:absolute;
+    bottom: 0px;
+    width: 100%;
+}
+
+#szinpad_kulso {
+    width: 100%;
+    height: 100%;
+    float: left;
+    
+}
+
+#szinpad {
+    width: 100%;
+    height: 100%;
+    float: left;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+#portre_kontener {
+    float: right;
+    margin-right: 20px;
+    margin-top: 20px;
+    z-index: 5;
+    width: 450px;
+    
+    
+}
+.portre {
+    width:225px;
+    height: 145px;
+    float: left;
+    background-image: url('../assets/images/portrait_hatter2.png');
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+}
+
+.portre_kep {
+    float: left;
+    width: 80px;
+    height: 86px; 
+}
+
+.portre_kep_kep {
+    width: 74px;
+    height: 55px;
+    margin-left: 6px;
+    
+    text-align: center;
+    padding-top: 20px;
+    
+    
+}
+
+.portre_kep_szint {
+    
+    margin-top: -10px;
+    height: 20px;
+    width: 90px;
+    amargin-left: 32px;
+    color: white;
+    font-family: 'Fontin-Regular';
+    font-size: 14px;
+    text-align: center;
+}
+
+.portre_nev {
+    float: left;
+    padding-left: 10px;
+    height: 15px;
+    margin-top: -6px;
+    text-align: left;
+    width: 120px;
+    font-family: 'Fontin-Regular';
+    font-size: 12px;
+    color: #fff799;
+    cursor: move;
+}
+
+.hp_es_mana {
+    float: left;
+    width: 120px;
+    height: 35px;
+    
+}
+
+.hp_bar {
+    
+    margin-top: 5px;
+    margin-left: 5px;
+    width:119px;
+    height: 9px;
+    
+    
+    overflow: hidden;
+    background-image: url('../assets/images/hp_bar.png');
+}
+
+.hp_szam {
+   text-align: center;
+   color: white;
+   font-family: Arial;
+   font-size: 10px; 
+   width:119px;
+   height: 9px;
+   position: absolute;
+   margin-top: 3px;
+}
+
+.mana_szam {
+   text-align: center;
+   color: white;
+   font-family: Arial;
+   font-size: 10px; 
+   width:119px;
+   height: 9px;
+   position: absolute;
+   margin-top: 18px;
+}
+
+.mana_bar {
+    
+    margin-top: 6px;
+    margin-left: 5px;
+    width: 119px;
+    height: 9px;
+    
+    overflow: hidden;
+    background-image: url('../assets/images/mana_bar.png');
+}
+
+.kezek_hatter {
+    
+    float: left;
+    width:77px;
+    height: 44px;
+    margin-top: 0px;
+    margin-left: 5px;
+    background-image: url('../assets/images/kezek_hatter.png');
+    color: white;
+    
+}
+
+.kez1 {
+    float: left;
+    position: relative;
+    width:32px;
+    height: 32px;
+    
+    margin-top: 7px;
+    margin-left: 3px;
+    
+    cursor: pointer;
+    
+}
+
+.portre_ikonok {
+    float: left;
+    margin-left: 2px;
+    margin-top: 1px;
+    width: 46px;
+    
+}
+
+.portre_ikon_karakterlap {
+    float: left;
+    margin-right: 2px;
+    cursor: pointer;
+    height: 20px;
+}
+
+.portre_ikon_inventory {
+    float: left;
+    cursor: pointer;
+    height: 20px;
+}
+
+.portre_ikon_skills {
+    float: left;
+    margin-right: 2px;
+    cursor: pointer;
+    height: 20px;
+}
+
+.portre_ikon_abilities {
+    float: left;
+    cursor: pointer;
+    height: 20px;
+}
+
+.portre_skill_kitolto {
+    float: left;
+    width: 52px;
+    height: 37px;
+}
+
+.portre_skill_kitolto2 {
+    float: left;
+    width: 72px;
+    height: 37px;
+}
+
+.portre_skill_ikonok {
+    width: 200px;
+    height: 40px;
+    
+    float: left;
+    margin-left: 12px;
+}
+.portre_skill_egy_ikon {
+    width: 37px;
+    height: 37px;
+    float: left;
+    background-image: url('../assets/images/portre_skill_hatter.png');
+    background-repeat: no-repeat;
+    padding-left: 3px;
+    padding-top: 3px;
+    cursor: pointer;
+    position: relative;
+}
+
+.portre_skill_egy_ikon_aktiv {
+    background-image: url('../assets/images/portre_skill_hatter_aktiv.png') !important;
+}
+
+.buffok {
+    float: left;
+    width: 130px;
+    height: 20px;
+    margin-left: 13px;
+    margin-top: 0px;
+}
+
+.egy_buff {
+    float: left;
+    margin-right: 3px;
+}
+
+.debuffok {
+    float: left;
+    width: 100px;
+    height: 20px;
+    
+    margin-left: 10px;
+    
+}
+
+.utes_tiltva {
+    display: none;
+    width:32px;
+    height:32px; 
+    background-color: gray; 
+    position: absolute; 
+    color: white;
+    font-family: "Fontin-Regular";
+    font-size: 14px;
+    text-align: center;
+    opacity:0.7;
+}
+
+.utes_sikeres {
+    display: none;
+    width:32px;
+    height:32px; 
+    background-color: green; 
+    color: white;
+    font-family: "Fontin-Regular";
+    font-size: 18px;
+    text-align: center;
+    position: absolute; 
+    opacity:0.7;
+}
+
+.kez_fedo_miss {
+    position: absolute; 
+    width:32px;
+    height:25px; 
+    padding-top: 7px;
+    color: white;
+    font-family: "Fontin-Regular";
+    font-size: 14px;
+    text-align: center;
+    background-color: gray; 
+    opacity:0.7;
+    margin-top: 7px;
+    margin-left: 3px;
+    
+}
+
+.kez_fedo_sikeres {
+    position: absolute; 
+    width:32px;
+    height:28px; 
+    color: white;
+    font-family: "Fontin-Regular";
+    font-size: 18px;
+    text-align: center;
+    background-color: black; 
+    opacity:1;
+    margin-top: 7px;
+    margin-left: 3px;
+    
+    padding-top: 4px;
+    
+    background-image: url('../assets/images/blood_green3.png');
+    background-repeat: no-repeat;
+
+
+    
+    
+}
+
+.portre_fedo {
+    position: absolute; 
+    color: white;
+    font-family: "Fontin-Regular";
+    font-size: 18px;
+    text-align: center;
+    margin-top: 3px;
+    margin-left: 3px;
+    
+    background-image: url('../assets/images/blood_red2nagy.png');
+    background-repeat: no-repeat;
+    width:60px;
+    height:60px; 
+    margin-top: 5px;
+    padding-top: 25px;
+    margin-left: 10px;
+}
+
+.skill_fedo {
+    position: absolute; 
+    width:34px;
+    height:34px; 
+    color: white;
+    font-family: "Fontin-Regular";
+    font-size: 18px;
+    text-align: center;
+    background-color: gray; 
+    opacity:0.7;
+    margin-top: 3px;
+    margin-left: 3px;
+}
+
+#cutscenes {
+    display: none;
+    position:absolute;
+    width:800px;
+    height: 550px;
+    border: 1px solid #cccccc;
+    background-color: black;
+}
+
+#cutscene_images {
+    color: white;
+    width:800px;
+    height: 400px;
+    overflow: hidden;
+}
+
+#cutscene_images img{
+    position:absolute;
+    display: none;
+    width:800px;
+    height: 400px;
+    overflow: hidden;
+}
+
+#cutscene_texts {
+    color: white;
+    text-align: center;
+    margin-top: 15px;
+    padding-left: 20px;
+    padding-right: 30px;
+}
+
+#cutscene_texts div {
+    display: none;
+    color: white;
+    text-align: center;
+    position: absolute;
+    font-family: "Fontin-Regular";
+    font-size: 25px;
+}
+
+
+.abilities_hatter {
+    position:absolute;
+    top: 330px;
+    right: 120px;
+    width: 278px;
+    height: 424px;
+    background-image: url('../assets/images/abilities_hatter.png');
+    display: none;
+    z-index: 10;
+}
+
+.abilities_tartalom {
+    margin-left: 15px;
+    margin-top: 60px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 260px;
+    height: 350px;
+}
+
+.abilities_sor {
+    margin-bottom: 5px;
+    color: black;
+    font-family: "Fontin-Regular";
+    font-size: 14px;
+    background-image: url('../assets/images/sor_hatter.png');
+    background-repeat: no-repeat;
+    width: 243px;
+    height: 21px;
+    padding-left: 5px;
+    padding-top: 3px;
+    
+}
+
+.skills_hatter {
+    position:absolute;
+    top: 330px;
+    right: 420px;
+    width: 278px;
+    height: 424px;
+    background-image: url('../assets/images/spells_hatter.png');
+    display: none;
+    z-index: 10;
+}
+
+
+
+.skills_elemek {
+    width: 240px;
+    height: 290px;
+    margin-left: 30px;
+    margin-top: 5px;
+    float: left;
+}
+
+.egy_skills_hely {
+    
+    width: 32px;
+    height: 32px;
+    float: left;
+    margin-right: 27px;
+    margin-bottom: 24px;
+    cursor: pointer;
+    position: relative;
+    
+ 
+}
+
+#skill_szintek_szoveg_kulso {
+    position: relative;
+}
+#skill_szintek_szoveg1 {
+    position: absolute;
+    margin-left: 250px;
+    margin-top: 87px;
+    color: white;
+    font-family: Arial;
+    font-size: 12px;
+}
+#skill_szintek_szoveg2 {
+    position: absolute;
+    margin-left: 250px;
+    margin-top: 145px;
+    color: white;
+    font-family: Arial;
+    font-size: 12px;
+}
+#skill_szintek_szoveg3 {
+    position: absolute;
+    margin-left: 250px;
+    margin-top: 205px;
+    color: white;
+    font-family: Arial;
+    font-size: 12px;
+}
+#skill_szintek_szoveg4 {
+    position: absolute;
+    margin-left: 250px;
+    margin-top: 257px;
+    color: white;
+    font-family: Arial;
+    font-size: 12px;
+}
+#skill_szintek_szoveg5 {
+    position: absolute;
+    margin-left: 250px;
+    margin-top: 315px;
+    color: white;
+    font-family: Arial;
+    font-size: 12px;
+}
+.skill_szovegek {
+    width: 240px;
+    height: 15px;
+    aborder: 1px solid white;
+    font-family: "Fontin-Regular";
+    font-size: 14px;
+    color: white;
+    float: left;
+    margin-left: 23px;
+    margin-top: 17px;
+}
+
+.skill_szoveg_passziv {
+    float: left;
+}
+.skill_szoveg_buff {
+    float: left;
+    margin-left: 23px;
+}
+.skill_szoveg_aktiv {
+    float: left;
+    margin-left: 60px;
+}
+
+.gems_hatter {
+    position:absolute;
+    left: 500px;
+    top: 350px;
+    width:278px;
+    height: 424px;
+    z-index: 10;
+    background-image: url('../assets/images/gems_hatter.png');
+    display: none;
+}
+
+#gems_tartalom {
+    width: 250px;
+    margin-left: 15px;
+    margin-top: 55px;
+    position: relative;
+    height: 380px;
+    color: white;
+}
+
+.achievements_hatter {
+    position:absolute;
+    left: 100px;
+    top: 350px;
+    width:278px;
+    height: 424px;
+    z-index: 10;
+    background-image: url('../assets/images/achievements_hatter.png');
+    display: none;
+
+}
+
+#achievements_tartalom {
+    width: 250px;
+    margin-left: 15px;
+    margin-top: 55px;
+    position: relative;
+    height: 380px;
+    color: white;
+}
+
+.archi_sor {
+    margin-bottom: 5px;
+}
+
+.archi_nev {
+    color: #fff799;
+    font-size: 14px;
+    font-family: Arial;
+    font-weight: bold;
+}
+
+.archi_jutalom {
+    color: white;
+    font-size: 12px;
+    font-family: Arial;
+    font-style: italic;
+}
+
+
+.forge_hatter {
+    position:absolute;
+    left: 800px;
+    top: 350px;
+    width:278px;
+    height: 424px;
+    z-index: 10;
+    background-image: url('../assets/images/forge_hatter.png');
+    display: none;
+
+}
+
+#forge_tartalom {
+    width: 250px;
+    margin-left: 15px;
+    margin-top: 55px;
+    position: relative;
+    height: 380px;
+}
+
+#forge_tartalom_targy1 {
+    position: absolute;
+    width: 34px;
+    height: 34px;
+    left: 109px;
+    top: 35px;
+}
+#forge_tartalom_targy2 {
+    position: absolute;
+    width: 34px;
+    height: 34px;
+    left: 36px;
+    top: 213px;
+}
+#forge_tartalom_targy3 {
+    position: absolute;
+    width: 34px;
+    height: 34px;
+    left: 174px;
+    top: 213px;
+}
+#forge_tartalom_targy4 {
+    position: absolute;
+    width: 34px;
+    height: 34px;
+    left: 108px;
+    top: 146px;
+    
+}
+
+#forge_tartalom_szoveg {
+    color: white;
+    font-size: 12px;
+    
+}
+
+#forge_tartalom_gombok {
+    position: absolute;
+    width: 240px;
+    top: 270px;
+    text-align: center;
+}
+
+.kuldi_hatter {
+    position:absolute;
+    left: 200px;
+    top: 300px;
+    width:278px;
+    height: 424px;
+    z-index: 10;
+    background-image: url('../assets/images/kuldi_hatter.png');
+    display: none;
+}
+#kuldi_tartalom {
+    width: 210px;
+    margin-left: 25px;
+    margin-top: 85px;
+    color: #26090e;
+    font-size: 13px;
+    
+    font-family: "betutipus2";
+}
+
+#kuldi_tartalom span {
+    color: #345e0b;
+}
+
+
+.inventory_hatter {
+    position:absolute;
+    left: 10px;
+    top: 20px;
+    width:278px;
+    height: 424px;
+    background-image: url('../assets/images/inventory_hatter.png');
+    z-index: 10;
+    display: none;
+}
+
+#inventory_elemek {
+    
+    width: 230px;
+    height: 400px;
+    margin-left: 28px;
+    margin-top: 21px;
+    float: left;
+}
+
+.egy_taskahely {
+    width: 34px;
+    height: 33px;
+    float: left;
+    margin-right: 4px;
+    margin-bottom: 3px;
+    
+ 
+}
+
+
+.karekterlap_hatter {
+    position:absolute;
+    left: 290px;
+    top: 20px;
+    width:278px;
+    height: 424px;
+    background-image: url('../assets/images/karakter_lap2.png');
+    z-index: 10;
+    display: none;
+}
+
+
+
+#karakterlap_portre {
+    float: left;
+    margin-left: 10px;
+    text-align: center;
+    margin-top: 10px;
+    width: 100px;
+    height: 180px;
+    
+    font-size: 12px;
+    color: #fff799;
+    font-family: 'Fontin-Regular';
+}
+
+#karakterlap_statok {
+    float: left;
+    width: 100px;
+    margin-left: 10px;
+}
+
+.karakterlap_stat_sor {
+    font-size: 12px;
+    color: #fff799;
+    font-family: 'Fontin-Regular';
+    margin-bottom: 1px;
+}
+
+
+#karekterlap_felszerelesek {
+    float: left;
+    width: 163px;
+    height: 270px;
+    position: relative;
+}
+
+.karakterlap_felszereles {
+    width: 33px;
+    height: 33px;
+    
+    
+}
+
+.karakterlap_fej {
+    position: absolute;
+    left: 121px;
+    top: 16px;
+}
+
+.karakterlap_nyak {
+    position: absolute;
+    left: 22px;
+    top: 40px;
+}
+
+.karakterlap_torzs {
+    position: absolute;
+    left: 76px;
+    top: 67px;
+}
+.karakterlap_bal_kez {
+    position: absolute;
+    left: 20px;
+    top: 143px;
+}
+.karakterlap_jobb_kez {
+    position: absolute;
+    left: 128px;
+    top: 143px;
+}
+.karakterlap_kesztyu {
+    position: absolute;
+    left: 20px;
+    top: 181px;
+}
+
+.karakterlap_gyuru1 {
+    position: absolute;
+    left: 129px;
+    top: 180px;
+}
+.karakterlap_gyuru2 {
+    position: absolute;
+    left: 129px;
+    top: 220px;
+}
+.karakterlap_cipo {
+    position: absolute;
+    left: 77px;
+    top: 220px;
+}
+
+
+
+
+.karakterlap_szintlepes {
+    margin-left: 20px;
+    margin-top: 3px;
+    font-size: 12px;
+    color: #ffffff;
+    font-family: 'Fontin-Regular';
+    float: left;
+    
+}
+
+.stat_egy {
+    float: left;
+    width: 180px;
+}
+.stat_egy_neve {
+    float: left;
+    margin-right: 5px;
+    font-family: 'Fontin-Regular';
+    font-size: 12px;
+    width: 60px;
+}
+
+.stat_egy_nyil_balra {
+    float: left;
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+}
+
+.stat_egy_ertek {
+    float: left;
+}
+
+.stat_egy_nyil_jobbra {
+    float: left;
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+    margin-left: 6px;
+}
+
+.stat_egy_leiras {
+    float: left;
+    margin-left: 15px;
+}
+
+
+
+
+
+
+.lapok_dragndrop {
+    height: 45px;
+    width: 240px;
+    float: left;
+    cursor: move;
+}
+
+.lapok_bezar {
+    float: left;
+    width: 30px;
+    height: 45px;
+    cursor: pointer;
+}
+
+.item {
+    z-index: 11;
+}
+.item_karakterrol {
+   z-index: 11; 
+}
+.item_chatben {
+    cursor: pointer;
+}
+
+.karakterlap_kep {
+    float: left;
+    border: 1px solid white;
+    width: 80px;
+    height: 80px;
+    margin-left: 20px;
+    margin-top: 10px;
+    
+}
+
+
+.karakterlap_alapinfok {
+    float: left;
+    border: 1px solid white;
+    width: 150px;
+    height: 80px;
+    margin-left: 5px;
+    margin-top: 10px;
+}
+
+.karakterlap_taska {
+    float: left;
+    width: 135px;
+    height: 240px;
+    margin-left: 24px;
+    margin-top: 5px;
+}
+
+.karakterlap_egy_taskahely {
+    width: 33px;
+    height: 33px;
+    float: left;
+    margin-right: 8px;
+    margin-bottom: 6px;
+    
+}
+
+.karakterlap_egy_taskahely div {
+    
+    width: 33px;
+    height: 33px;
+}
+
+.karakterlap_egy_taskahely div img{
+    
+}
+
+.karakterlap_egy_taskahely_drop-hover {
+    background-color: #086da8;
+}
+
+
+
+.iranyitas {
+    float: left;
+    margin-left: 5px;
+    width: 210px;
+    height: 100px;
+    
+    color: black;
+    
+}
+
+#iranyitas_fel {
+    float: left;
+    width: 70px;
+    text-align: center;
+    margin-left: -10px;
+}
+#iranyitas_le {
+    float: left;
+    width: 70px;
+    text-align: center;
+    margin-left: -10px;
+    margin-top: -20px;
+}
+#iranyitas_jobb {
+    float: left;
+    width: 70px;
+    text-align: center;
+     margin-left: -10px;
+    margin-top: -20px;
+}
+#iranyitas_bal {
+    float: left;
+    width: 70px;
+    text-align: center;
+    margin-top: -20px;
+}
+#iranyitas_kanyar_jobb {
+    float: left;
+    width: 70px;
+    text-align: center;
+    margin-left: -10px;
+}
+#iranyitas_kanyar_bal {
+    float: left;
+    width: 70px;
+    text-align: center;
+}
+
+
+.iranytu {
+    float: left;
+    margin-left: 5px;
+    width: 165px;
+    height: 130px;
+    overflow: hidden;
+    text-align: center;
+    margin-top: -15px;
+    
+}
+
+#minimap {
+    float: left;
+    border: 1px solid #15110f;
+    width: 100px;
+    height: 100px;
+    margin-left: 5px;
+    margin-top: 10px;
+    overflow: hidden;
+    background-color: gray;
+    
+    opacity: 0.7;
+}
+
+#terkep_neve {
+    padding: 5px;
+    border: 1px solid;
+    opacity: 0.9;
+    margin-left: 5px;
+    margin-top: 5px;
+    text-align: center;
+    width: 90px;
+    color: white;
+    font-family: 'Fontin-Regular';
+    font-size: 12px;
+    background-color: #362f2d;
+    border: 1px solid #15110f;
+    float:left;
+}
+
+#kuldetes_cuccok_baloldal {
+    border: 1px solid;
+    opacity: 0.9;
+    margin-left: 5px;
+    margin-top: 5px;
+    
+    width: 200px;
+    
+    background-color: #362f2d;
+    border: 1px solid #15110f;
+    float:left;
+    padding: 5px;
+}
+
+.egy_kuldetes_baloldal {
+    color: white;
+    font-family: 'Fontin-Regular';
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+.egy_kuldetes_leiras_baloldal {
+    color: white;
+    font-family: 'Fontin-Regular';
+    font-size: 11px;
+    margin-left: 10px;
+}
+
+br.clear{
+    clear: both;
+}
+
+#szovegek_kulso {
+    width: 536px;
+    height: 95px;
+    float: left;
+    margin-top: 15px;
+    margin-left: 5px;
+    font-family: 'Fontin-Regular';
+    font-size: 14px;
+    color: white;
+    padding-left: 15px;
+    padding-top: 12px;
+    padding-bottom: 20px;
+    background-image: url('../assets/images/chat_hatter.png');
+    background-repeat: no-repeat;
+}
+#szovegek {
+    width: 510px;
+    height: 65px;
+    overflow-y: hidden;
+}
+
+.szovegek_egysor {
+    
+}
+
+.menuk_hatter {
+    margin-top: 51px;
+    float: right;
+    
+    margin-right: 20px;
+    
+    
+}
+
+.menuk_egymenu {
+    float: left;
+    cursor: pointer;
+}
+
+#artifact_hatter {
+    background-image: url('../assets/images/artifact_hatter.png');
+    background-repeat: no-repeat;
+    width: 843px;
+    height: 679px;
+    display: none;
+    position: absolute;
+    z-index: 51;
+}
+
+#artifact_cim {
+    text-align: center;
+    color: black;
+    font-family: 'Fontin-Regular';
+    font-size: 20px;
+    margin-top: 50px;
+}
+#artifact_darabok {
+    float: left;
+    margin-left: 230px;
+}
+
+.artifact_darab{
+    float: left;
+    width: 110px;
+    text-align: center;
+    
+}
+
+.artifact_sor {
+    float: left;
+    width: 600px;
+    margin-left: 180px;
+    height: 105px;
+}
+
+.artifact_sor_darab_van {
+    float: left;
+    font-family: 'Fontin-Regular';
+    font-size: 20px;
+    padding-top: 20px;
+    height: 105px;
+    width: 52px;
+}
+
+.artifact_sor_o1 {
+    
+    width: 100px;
+    float: left;
+    text-align: center;
+    height: 90px;
+}
+
+#terkepek {
+    background-image: url('../assets/images/terkepek_hatter.png');
+    background-repeat: no-repeat;
+    width: 843px;
+    height: 679px;
+    display: none;
+    position: absolute;
+    z-index: 51;
+}
+
+#terkepek_terkep {
+    width: 710px;
+    height: 390px;
+    
+    margin-left: 90px;
+    margin-top: 50px;
+    text-align: center;
+    padding: 10px;
+}
+
+#terkepek_szovegek {
+    margin-left: 90px;
+    margin-top: 10px;
+}
+
+#terkepek_szovegek_nev {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+#jatek_menu {
+    background-image: url('../assets/images/papir.png');
+    background-repeat: no-repeat;
+    width: 640px;
+    height: 480px;
+    display: none;
+    position: absolute;
+    z-index: 51;
+}
+
+#jatek_menu_cim {
+    text-align: center;
+    color: black;
+    font-family: 'Fontin-Regular';
+    font-size: 20px;
+    margin-top: 40px;
+}
+
+#jatek_menu_belso {
+    margin-left: 180px;
+    margin-top: 20px;
+    width: 400px;
+    
+}
+
+.jatek_menu_menupont {
+    
+    background-image: url('../assets/images/box.png');
+    background-repeat: no-repeat;
+    width: 290px;
+    height: 40px;
+    color: black;
+    font-family: 'Fontin-Regular';
+    font-size: 20px;
+    text-align: center;
+    padding-top: 8px;
+    cursor: pointer;
+}
+
+#jatek_menu_fedo_reteg {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index:50;
+    -moz-opacity: 0.5;
+    opacity:.50;
+    filter: alpha(opacity=50);
+    
+}
+#npc_interakcio_div {
+    display: none;
+    position: absolute;
+    left: 20px;
+    bottom: 200px;
+    
+}
+
+#npc_interakcio_elinditva_div {
+    float: left;
+    width: 600px;
+    display: none;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+#npc_interakcio_elinditva_div_belso {
+    float: left;
+    
+    width: 600px;
+    background-color: #362f2d;
+    border: 1px solid #15110f;   
+    padding: 25px;
+    opacity: 0.8;
+}
+
+#npc_int_kep {
+    float: left;
+    width: 120px;
+}
+
+#npc_int_szovegek {
+    float: left;
+    margin-left: 20px;
+    width: 450px;
+    
+    color: white;
+    font-family: 'Fontin-Regular';
+    font-size: 15px;
+    
+}
+
+.npc_int_szoveg_npc {
+    margin-bottom: 10px;   
+    font-style: italic;
+}
+
+.npc_int_szoveg_npc span{
+    color: #FFF799;
+    font-weight: bold;
+}
+
+
+
+.npc_int_szoveg_valasz {
+    cursor: pointer;
+    margin-bottom: 4px;
+}
+
+
+
+#alap_popup {
+    width: 300px;
+    height: 273px;
+    background-image: url('../assets/images/panel_nagy.png');
+    color: white;
+    position:absolute;
+    z-index: 230;
+    display: none;
+    margin-left: 340px;
+}
+
+#alap_popup_szoveg {
+    padding: 10px;
+    padding-top: 70px;
+    font-family: 'Fontin-Regular';
+    font-size: 14px;
+    text-align: center;
+    
+}
+
+.speech_bubble {
+    width: 130px;
+    height: 56px;
+    background-image: url('../assets/images/speechbubble.png');
+    background-repeat: no-repeat;
+    position:absolute;
+    display: none;
+    z-index: 230;
+}
+
+.speech_bubble_szoveg {
+    font-family: Verdana;
+    font-size: 12px;
+    color: black;
+    margin-left: 5px;
+    margin-top: 5px;
+    width: 100px;
+    height: 45px;
+    text-align: center;
+    
+}
+#toltes_jelzes {
+    position: absolute;
+    top: 10px;
+    left: 250px;
+    background-color: black;
+    font-family: Verdana;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    padding: 10px;
+    border: 1px solid white;
+}
+
+#toltes_jelzes span.toltes_kicsi {
+    font-family: Verdana;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+#storyline_beszelhetesek {
+    opacity: 0.9;
+    margin-left: 5px;
+    margin-top: 50px;
+    
+    width: 400px;
+    
+    background-color: #362f2d;
+    border: 1px solid #15110f;
+    float:left;
+    padding: 8px;
+    cursor: pointer;
+    
+    display: none;
+}
+
+.sl_b_egysor_utolso {
+    color: white;
+    font-family: Verdana;
+    font-size: 12px;
+    float: right;
+}
+
+.sl_b_egysor {
+    margin-bottom: 10px;
+    float: left;
+    display: none;
+}
+
+.sl_b_egysor_kep {
+    float: left;
+    width: 50px;
+    text-align: center;    
+}
+.sl_b_egysor_szoveg {
+    float: left;
+    width: 340px;
+    margin-left: 10px;
+    color: white;
+    font-family: Verdana;
+    font-size: 14px;
+}
+
+.sl_b_egysor_szoveg span{
+    color: #fff799;
+}
+
+.ellenseg_infok {
+    abackground-color: #362f2d;
+    aborder: 1px solid #15110f;
+    
+    text-align: center;
+    position: absolute;
+    color: white;
+    display: none;
+    aleft: 200px;
+    
+    
+    
+    
+    
+}
+
+.ellenseg_infok_nev {
+    font-size: 12px;
+    font-family: Arial;
+    height: 15px;
+}
+.ellenseg_infok_hp {
+    font-size: 12px;
+    font-family: Arial;
+    background-image: url('../assets/images/ellenseg_hp_hatter.png');
+    background-repeat: no-repeat;
+    width: 127px;
+    height: 16px;
+    padding-top: 2px;
+}
+
+.ellenseg_hp_bar {
+    
+    margin-top: 2px;
+    margin-left: 5px;
+    width:119px;
+    height: 9px;
+    
+    
+    overflow: hidden;
+    background-image: url('../assets/images/hp_bar.png');
+}
+
+.ellenseg_infok_egyeb {
+    font-size: 11px;
+    font-family: Arial;
+    text-align: center;
+    font-style: italic;
+}
+
+.skillbook_fedo {
+    position: absolute; 
+    width:34px;
+    height:34px; 
+    left: 0px;
+    top: 0px;
+    color: white;
+    background-color: gray; 
+    opacity:0.7;
+}
+
+.skill_kolthet_szoveg {
+    font-size: 12px;
+    font-family: Arial;
+    text-align: center;
+    color: white;
+    margin-left: 20px;
+}
+
+#kerdoiv {
+    position: absolute;
+    margin-left: 200px;
+    margin-top: 100px;
+    background-color: #362f2d;
+    border: 1px solid #15110f;
+    width: 600px;
+    font-size: 12px;
+    font-family: Arial;
+    color: white;
+    padding: 20px;
+    z-index: 3000;
+    display: none;
+}
+
+.kerdoiv_bevezeto {
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.kerdoiv_kerdes {
+        font-weight: bold;
+    font-style: italic;
+
+}
+
+.kerdoiv_valasz_fej {
+    
+}
+
+.kerdoiv_valasz_test {
+    margin-bottom: 30px;
+    
+    float: left;
+    
+}
+
+.kerdoiv_valasz1 {
+    float: left;
+    width: 100px;
+    text-align: center;
+    
+}
