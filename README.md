@@ -13,4 +13,6 @@ This is a Beta build a lot of things are missing and bugs can still happen, but 
 
 Unfortunately large part of the code and the comments are in hungarian language.
 
+This is my first game programming project. Code refactor is a must :P
+
 License: http://creativecommons.org/licenses/by/3.0/
